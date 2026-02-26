@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Invite</title>
+
+  <!-- Шрифт -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+
+  <!-- ФОНЫ -->
+  <div class="background-layer first"></div>
+  <div class="background-layer second"></div>
+
+  <!-- БАННЕР -->
+  <div class="banner">
+    <img src="tulp2.png" alt="">
+  </div>
+
+  <!-- ИМЯ -->
+  <h1 class="rose-text">Азиля</h1>
+
+  <!-- ЦЕНТРАЛЬНОЕ ИЗОБРАЖЕНИЕ -->
+  <div class="center-image">
+    <img src="age.png" alt="">
+  </div>
+
+  <!-- ЖАС -->
+  <div class="decor-section">
+    <div class="decor-row">
+      <img src="tulp1.png" class="decor" alt="">
+      <div class="center-text">ЖАС</div>
+      <img src="tulp1.png" class="decor" alt="">
+    </div>
+
+    <div class="after-text">
+      Құрметті ағайын-туыс, бауырлар, құда-жекжат, нағашы-жиен, бөлелер, дос-жарандар, әріптестер, көршілер!
+    </div>
+  </div>
+
+  <!-- ДЕКОР -->
+  <div class="center-image">
+    <img src="designA.png" alt="">
+  </div>
+
+  <!-- ТЕКСТ -->
+  <div class="text1">Сіздерді көптен</div>
+  <div class="text1">күткен мерейлі той</div>
+  <div class="after-text1">аяулы анамыз Азиляның</div>
+
+  <div class="text2">70 ЖАС МЕРЕЙТОЙЫНА</div>
+  <div class="text2">АРНАП ЖАЙЫЛҒАН САЛТАНАТТЫ</div>
+  <div class="text2">АҚ ДАСТАРХАННЫҢ ҚАДІРЛІ</div>
+  <div class="text2">ҚОНАҒЫ БОЛУҒА</div>
+  <div class="text2">ШАҚЫРАМЫЗ!</div>
+
+  <!-- БАЛАСЫ / КЕЛІНІ -->
+  <div class="owners-section">
+    <img src="tulp1.png" alt="" class="decor2">
+    <div class="after-text1">Той салтанаты:</div>
+    <b></b><b></b>
+    <div class="center-text1">04.04.2026</div>
+    <b></b><b></b><b></b><b></b>
+    <div class="center-text1">сағат 17.00</div>
+    <b></b><b></b>
+  </div>
+  <div class="center-image">
+    <div class="after-text1">Сәуір
+    <img src="date.png" alt="">
+    </div>
+  </div>
+  <div class="center-image">
+    <img src="designB.png" alt="">
+  </div>
+  <div class="after-text1">Мекенжайымыз:</div>
+  <div class="text2">Орал қаласы,</div>
+  <div class="text2">Астана шағын ауданы, 12/1</div>
+  <div class="after-text1">"Dombyra"</div>
+  <div class="text2">Мейрамханасы</div>
+  <div class="after-text1">Той иелері: жұбайы, балалары, немерелері</div>
+  <b></b><b></b><b></b><b></b>
+  <b></b><b></b><b></b><b></b>
+  <b></b><b></b><b></b><b></b>
+  <div class="text2">СІЗДЕРГЕ ЫҢҒАЙЛЫ БОЛУ ҮШІН</div>
+  <div class="text2">ТӨМЕНДЕГІ КАРТАНЫ</div>
+  <div class="text2">ҚОЛДАНЫҢЫЗ.</div>
+  <div class="center-image">
+    <a href="https://2gis.kz/uralsk/geo/70000001068813332" target="_blank">
+    <img src="pointA.jpeg" alt="" class="rounded-circle">
+    </a>
+  </div>
+<div class="center-image">
+    <img src="designA.png" alt="">
+  </div>
+<b></b><b></b><b></b><b></b>
+<b></b><b></b><b></b><b></b>
+<b></b><b></b><b></b><b></b>
+<div class="after-text1">Той салтанатына дейін :</div>
+  <div id="countdown" class="countdown-timer">
+  <!-- Таймер будет отображаться сюда -->
+</div>
+
+
+<script>
+const targetDate = new Date("2026-04-05T17:00:00").getTime();
+const countdownElement = document.getElementById("countdown");
+
+function updateCountdown() {
+  const now = new Date().getTime();
+  const distance = targetDate - now;
+
+  if (distance < 0) {
+    countdownElement.innerHTML = "Той басталды!";
+    clearInterval(interval);
+    return;
+  }
+
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  countdownElement.innerHTML = `${days} күн ${hours} сағат ${minutes} минут ${seconds} секунд`;
+}
+
+const interval = setInterval(updateCountdown, 1000);
+updateCountdown();
+</script>
+<div class="after-text1">Осы сілтеме бойынша өтіңіз :</div>
+<div class="center-image">
+    <a href="https://forms.gle/5W7ZoXAmCJEKa62s7" target="_blank">
+    <img src="ggl.png" alt="" class="rounded-circle">
+    </a>
+  </div>
+<b></b><b></b><b></b><b></b>
+<b></b><b></b><b></b><b></b>
+<b></b><b></b><b></b><b></b>
+<div class="after-text1">Қуанышымызға ортақ болыңыз!</div>
+
+<!-- 🎵 КНОПКА МУЗЫКИ С КРУГОВЫМ ТЕКСТОМ -->
+<div id="music-wrapper">
+  <div class="circle-text" id="circle-text">
+    ӘУЕНДІ ҚОСУ • ӘУЕНДІ ҚОСУ • ӘУЕНДІ ҚОСУ •
+  </div>
+
+  <div id="music-btn">
+    <img src="playy.png" id="icon-play" alt="">
+    <img src="ps.png" id="icon-pause" alt="">
+  </div>
+</div>
+
+<audio id="bg-music" src="music.mp3"></audio>
+
+<script>
+  /* ===== КРУГОВОЙ ТЕКСТ ===== */
+  const circle = document.getElementById("circle-text");
+  const text = circle.innerText;
+  circle.innerHTML = "";
+
+  const radius = 70;
+  const step = 360 / text.length;
+
+  [...text].forEach((char, i) => {
+    const span = document.createElement("span");
+    span.innerText = char;
+    span.style.transform = `
+      rotate(${i * step}deg)
+      translate(${radius}px)
+      rotate(90deg)
+    `;
+    circle.appendChild(span);
+  });
+
+  /* ===== МУЗЫКА ===== */
+  const btn = document.getElementById("music-btn");
+  const music = document.getElementById("bg-music");
+  const play = document.getElementById("icon-play");
+  const pause = document.getElementById("icon-pause");
+
+  pause.style.display = "none";
+
+  btn.addEventListener("click", () => {
+    if (music.paused) {
+      music.play();
+      play.style.display = "none";
+      pause.style.display = "block";
+    } else {
+      music.pause();
+      play.style.display = "block";
+      pause.style.display = "none";
+    }
+  });
+</script>
+</body>
+</html>
